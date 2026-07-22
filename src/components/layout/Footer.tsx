@@ -11,7 +11,7 @@ export function Footer() {
               className="text-3xl font-bold text-white"
             >
               Fin
-              <span className="text-[var(--primary)]">
+              <span className="text-slate-100">
                 Control
               </span>
             </Link>
@@ -32,7 +32,7 @@ export function Footer() {
               <li>
                 <a
                   href="#benefits"
-                  className="transition hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-white"
                 >
                   Benefícios
                 </a>
@@ -41,7 +41,7 @@ export function Footer() {
               <li>
                 <a
                   href="#plans"
-                  className="transition hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-white"
                 >
                   Planos
                 </a>
@@ -50,7 +50,7 @@ export function Footer() {
               <li>
                 <a
                   href="#testimonials"
-                  className="transition hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-white"
                 >
                   Depoimentos
                 </a>
@@ -67,7 +67,7 @@ export function Footer() {
               <li>
                 <a
                   href="#"
-                  className="transition hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-white"
                 >
                   Sobre nós
                 </a>
@@ -76,7 +76,7 @@ export function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="transition hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-white"
                 >
                   Contato
                 </a>
@@ -85,7 +85,7 @@ export function Footer() {
               <li>
                 <a
                   href="#"
-                  className="transition hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-white"
                 >
                   Blog
                 </a>
@@ -102,7 +102,7 @@ export function Footer() {
               <li>
                 <a
                   href="#"
-                  className="transition hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-white"
                 >
                   Central de Ajuda
                 </a>
@@ -111,7 +111,7 @@ export function Footer() {
               <li>
                 <a
                   href="#"
-                  className="transition hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-white"
                 >
                   Política de Privacidade
                 </a>
@@ -120,7 +120,7 @@ export function Footer() {
               <li>
                 <a
                   href="#"
-                  className="transition hover:text-white"
+                  className="text-slate-300 transition-colors hover:text-white"
                 >
                   Termos de Uso
                 </a>
@@ -129,7 +129,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 text-sm text-slate-500 md:flex-row">
+        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 text-sm text-slate-400 md:flex-row">
           <p>
             © 2026 FinControl. Todos os direitos reservados.
           </p>
