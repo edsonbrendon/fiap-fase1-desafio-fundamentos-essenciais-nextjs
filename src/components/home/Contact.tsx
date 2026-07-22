@@ -1,6 +1,9 @@
 import Image from "next/image";
-
+import { SectionHeader } from "../ui/SectionHeader";
 import { Button } from "../ui/Button";
+import { Input } from "../ui/Input";
+import { TextArea } from "../ui/TextArea";
+import Link from "next/link";
 
 export function Contact() {
   return (
@@ -9,40 +12,33 @@ export function Contact() {
       className="bg-slate-50"
     >
       <div className="mx-auto max-w-7xl px-6 py-24">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl font-extrabold tracking-tight text-slate-900">
-            Vamos conversar
-          </h2>
-
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-600">
-            Tem alguma dúvida sobre o FinControl? Envie uma mensagem e nossa
-            equipe responderá o mais rápido possível.
-          </p>
-        </div>
+        <SectionHeader
+          title="Vamos conversar"
+          description="Tem alguma dúvida sobre o FinControl? Envie uma mensagem e nossa equipe responderá o mais rápido possível."
+        />
 
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <form className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
             <div className="flex flex-col gap-5">
-              <input
+              <Input
                 type="text"
                 placeholder="Nome"
-                className="rounded-lg border border-slate-300 px-4 py-3 outline-none transition focus:border-[var(--primary)]"
               />
 
-              <input
+              <Input
                 type="email"
                 placeholder="E-mail"
-                className="rounded-lg border border-slate-300 px-4 py-3 outline-none transition focus:border-[var(--primary)]"
               />
 
-              <textarea
+              <TextArea
                 rows={6}
                 placeholder="Mensagem"
-                className="rounded-lg border border-slate-300 px-4 py-3 outline-none transition focus:border-[var(--primary)]"
               />
 
-              <Button type="submit" className="w-full">
-                Enviar mensagem
+              <Button asChild>
+                <Link href="/">
+                  Enviar mensagem
+                </Link>
               </Button>
             </div>
           </form>

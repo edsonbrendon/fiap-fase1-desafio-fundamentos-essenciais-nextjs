@@ -1,5 +1,6 @@
 import { Plan } from "@/types/plan";
 import { PlanCard } from "./PlanCard";
+import { SectionHeader } from "../ui/SectionHeader";
 
 type PlansProps = {
   plans: Plan[];
@@ -12,17 +13,13 @@ export function Plans({ plans }: PlansProps) {
       className="bg-white"
     >
       <div className="mx-auto max-w-7xl px-6 py-24">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl font-extrabold tracking-tight text-slate-900">
-            Escolha o plano ideal para você
-          </h2>
-
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+        <SectionHeader
+          title="Escolha o plano ideal para você"
+          description="
             Comece gratuitamente e evolua conforme suas necessidades.
             Todos os planos oferecem uma experiência simples, segura e
-            completa para cuidar das suas finanças.
-          </p>
-        </div>
+            completa para cuidar das suas finanças."
+        />
 
         <div className="grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
           {plans.map((plan) => (
